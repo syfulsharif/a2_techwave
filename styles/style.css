@@ -365,3 +365,51 @@ h3 {
 #exclusive-interview{
     grid-column: span 2;
 }
+
+/* Featured Episodes Section */
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.episode-card {
+    background: var(--bg-card);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.episode-card:hover {
+    box-shadow: 0 10px 30px rgba(181, 23, 99, 0.5);
+    transform: translateY(-5px);
+}
+
+
+.episode-thumbnail {
+    height: 200px;
+}
+
+
+.episode-info {
+    padding: 25px;
+}
+
+.episode-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.episode-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.duration {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
