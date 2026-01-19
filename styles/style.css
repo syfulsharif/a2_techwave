@@ -467,7 +467,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
 }
 
 
@@ -475,4 +475,56 @@ h3 {
     background: var(--primary-color);
     color: white;
     transform: translateY(-3px);
+}
+
+/* Footer Section Styles */
+
+.footer {
+    background-image: url('../assets/footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 0 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+.footer-links {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.footer-links i {
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.footer-links>a>i {
+    margin-right: 10px;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+
+.copyright {
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
