@@ -4,7 +4,7 @@
     --secondary-color: #333399;
     --accent-color: #00FF88;
     --bg-dark: #120024;
-    --bg-card: #1f1140;
+    --bg-card: rgba(53, 17, 101, 0.4);
     --text-main: #ffffff;
     --text-muted: #b3b3b3;
     --gradient-main: linear-gradient(135deg, #ff00cc 0%, #333399 100%);
@@ -350,11 +350,11 @@ h3 {
 
 
 
-#premium{
+#premium {
     grid-row: span 2;
 }
 
-#mobile-friendly{
+#mobile-friendly {
     grid-column: span 2;
 }
 
@@ -362,7 +362,7 @@ h3 {
     grid-column: span 2;
 }
 
-#exclusive-interview{
+#exclusive-interview {
     grid-column: span 2;
 }
 
@@ -412,4 +412,67 @@ h3 {
     font-size: 0.85rem;
     color: var(--accent-color);
     font-weight: 600;
+}
+
+
+/* Meet the Host Section Styles */
+
+.host-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: var(--bg-card);
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.host-image img {
+    border-radius: 50%;
+    border: 5px solid rgba(199, 27, 118, 0.1);
+}
+
+.host-image img:hover {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.host-content {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.host-content h3 {
+    font-size: 2rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+
+.host-content p {
+    font-size: 1.0rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;    
+}
+
+
+.social-icons a:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
 }
