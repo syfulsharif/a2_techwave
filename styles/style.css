@@ -268,7 +268,7 @@ h3 {
 
 
 .banner-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: var(--text-muted);
     margin-bottom: 40px;
     max-width: 600px;
@@ -346,6 +346,11 @@ h3 {
 .feature-card h3 {
     font-size: 1.1rem;
     margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1 rem;
+    color: var(--text-muted);
 }
 
 
@@ -429,6 +434,7 @@ h3 {
 .host-image img {
     border-radius: 50%;
     border: 5px solid rgba(199, 27, 118, 0.1);
+    transition: var(--transition);
 }
 
 .host-image img:hover {
@@ -527,4 +533,23 @@ h3 {
 .copyright {
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+
+/* Animation for the hero circle mic */
+
+@keyframes spin-glow {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 0 0 20px #ff00cc;
+    }
+
+    50% {
+        box-shadow: 0 0 40px #00ffcc;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 0 0 20px #ff00cc;
+    }
 }
