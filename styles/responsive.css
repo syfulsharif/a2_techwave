@@ -1,0 +1,133 @@
+/* Responsive Design Styles */
+
+/* Large Device: above 992 px */
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        gap: 20px;
+    }
+}
+
+
+/* Medium Device: 576px to 992 px */
+@media screen and (max-width: 992px) {
+
+    .nav-toggle-label {
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-dark);
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        gap: 20px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-toggle:checked~.nav-menu {
+        transform: scaleY(1);
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .banner-title {
+        font-size: 3rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Host */
+    .host-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .host-image {
+        flex: 0 0 auto;
+        width: 200px;
+    }
+
+    .host-content .section-title {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+
+/* Small device: up to 576 px */
+@media screen and (max-width: 576px) {
+
+
+    .banner {
+        padding: 120px 0 60px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn-gradient {
+        margin-right: 0;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .btn-outline {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .host-image {
+        width: 150px;
+    }
+}
