@@ -2,13 +2,13 @@
 :root {
     --primary-color: #ff00cc;
     --secondary-color: #333399;
-    --accent-color: #00ffcc;
+    --accent-color: #00FF88;
     --bg-dark: #120024;
     --bg-card: #1f1140;
     --text-main: #ffffff;
     --text-muted: #b3b3b3;
     --gradient-main: linear-gradient(135deg, #ff00cc 0%, #333399 100%);
-    --gradient-text: linear-gradient(90deg, #ff00cc, #00ffcc);
+    --gradient-text: linear-gradient(90deg, #ff00cc, #00FF88);
     --font-main: "Inter", sans-serif;
     --transition: all 0.3s ease;
 }
@@ -278,4 +278,90 @@ h3 {
 
 .banner-buttons>a>i {
     margin-right: 15px;
+}
+
+
+/* About Section Styles */
+.section {
+    padding: 80px 0;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+.section-desc {
+    text-align: center;
+    max-width: 800px;
+    margin: -40px auto 60px;
+    color: var(--text-muted);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+
+/* Why Choose Section Styles */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.feature-card {
+    background: var(--bg-card);
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+
+
+#premium{
+    grid-row: span 2;
+}
+
+#mobile-friendly{
+    grid-column: span 2;
+}
+
+#global-community {
+    grid-column: span 2;
+}
+
+#exclusive-interview{
+    grid-column: span 2;
 }
